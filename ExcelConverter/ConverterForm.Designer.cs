@@ -29,6 +29,7 @@ namespace ConsumptionConverter
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConverterForm));
             this.btnConvert = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.txtTarget = new System.Windows.Forms.TextBox();
@@ -42,9 +43,10 @@ namespace ConsumptionConverter
             // 
             // btnConvert
             // 
-            this.btnConvert.Location = new System.Drawing.Point(178, 385);
+            this.btnConvert.Location = new System.Drawing.Point(160, 308);
+            this.btnConvert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConvert.Name = "btnConvert";
-            this.btnConvert.Size = new System.Drawing.Size(713, 114);
+            this.btnConvert.Size = new System.Drawing.Size(642, 91);
             this.btnConvert.TabIndex = 0;
             this.btnConvert.Text = "Convert";
             this.btnConvert.UseVisualStyleBackColor = true;
@@ -56,43 +58,46 @@ namespace ConsumptionConverter
             // 
             // txtTarget
             // 
-            this.txtTarget.Location = new System.Drawing.Point(178, 239);
+            this.txtTarget.Location = new System.Drawing.Point(160, 191);
+            this.txtTarget.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTarget.Name = "txtTarget";
-            this.txtTarget.Size = new System.Drawing.Size(713, 31);
+            this.txtTarget.Size = new System.Drawing.Size(642, 26);
             this.txtTarget.TabIndex = 2;
             this.txtTarget.Text = "Target_YoY Monthly Energy Consumption (2025-08-28T13_29_13).xlsx";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(42, 242);
+            this.label1.Location = new System.Drawing.Point(38, 194);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 25);
+            this.label1.Size = new System.Drawing.Size(110, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Target xls File:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 124);
+            this.label2.Location = new System.Drawing.Point(38, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 25);
+            this.label2.Size = new System.Drawing.Size(115, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Source xls File:";
             // 
             // txtSource
             // 
-            this.txtSource.Location = new System.Drawing.Point(178, 121);
+            this.txtSource.Location = new System.Drawing.Point(160, 97);
+            this.txtSource.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSource.Name = "txtSource";
-            this.txtSource.Size = new System.Drawing.Size(713, 31);
+            this.txtSource.Size = new System.Drawing.Size(642, 26);
             this.txtSource.TabIndex = 4;
             this.txtSource.Text = "YoY Monthly Energy Consumption (2025-08-28T13_29_13).xlsx";
             // 
             // btnOpenSource
             // 
-            this.btnOpenSource.Location = new System.Drawing.Point(897, 119);
+            this.btnOpenSource.Location = new System.Drawing.Point(807, 95);
+            this.btnOpenSource.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOpenSource.Name = "btnOpenSource";
-            this.btnOpenSource.Size = new System.Drawing.Size(45, 34);
+            this.btnOpenSource.Size = new System.Drawing.Size(40, 27);
             this.btnOpenSource.TabIndex = 6;
             this.btnOpenSource.Text = "...";
             this.btnOpenSource.UseVisualStyleBackColor = true;
@@ -100,9 +105,10 @@ namespace ConsumptionConverter
             // 
             // btnOpenTarget
             // 
-            this.btnOpenTarget.Location = new System.Drawing.Point(897, 237);
+            this.btnOpenTarget.Location = new System.Drawing.Point(807, 190);
+            this.btnOpenTarget.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOpenTarget.Name = "btnOpenTarget";
-            this.btnOpenTarget.Size = new System.Drawing.Size(45, 34);
+            this.btnOpenTarget.Size = new System.Drawing.Size(40, 27);
             this.btnOpenTarget.TabIndex = 7;
             this.btnOpenTarget.Text = "...";
             this.btnOpenTarget.UseVisualStyleBackColor = true;
@@ -110,9 +116,9 @@ namespace ConsumptionConverter
             // 
             // ConverterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(978, 644);
+            this.ClientSize = new System.Drawing.Size(880, 515);
             this.Controls.Add(this.btnOpenTarget);
             this.Controls.Add(this.btnOpenSource);
             this.Controls.Add(this.label2);
@@ -120,6 +126,8 @@ namespace ConsumptionConverter
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTarget);
             this.Controls.Add(this.btnConvert);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ConverterForm";
             this.Text = "ConverterForm";
             this.ResumeLayout(false);
