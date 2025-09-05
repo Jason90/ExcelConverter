@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>..\docs\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -23,13 +23,13 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://github.com/Jason90/ExcelConverter/publish/</InstallUrl>
+    <InstallUrl>https://github.com/Jason90/ExcelConverter/</InstallUrl>
     <ProductName>ExcelConverter</ProductName>
     <PublisherName>JasonZhu</PublisherName>
     <SuiteName>ExcelConverter</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -115,35 +115,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\EPPlus.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\EPPlus.Interfaces.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\ExcelConverter.application" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\ExcelConverter.exe.config.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\ExcelConverter.exe.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\ExcelConverter.exe.manifest" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\icon_excel export.ico.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\Microsoft.IO.RecyclableMemoryStream.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\System.Buffers.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\System.ComponentModel.Annotations.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\System.Memory.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\System.Numerics.Vectors.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\System.Runtime.CompilerServices.Unsafe.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_0\System.Security.Cryptography.Xml.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\EPPlus.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\EPPlus.Interfaces.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\ExcelConverter.application" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\ExcelConverter.exe.config.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\ExcelConverter.exe.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\ExcelConverter.exe.manifest" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\icon_excel export.ico.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\Microsoft.IO.RecyclableMemoryStream.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\System.Buffers.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\System.ComponentModel.Annotations.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\System.Memory.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\System.Numerics.Vectors.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\System.Runtime.CompilerServices.Unsafe.dll.deploy" />
-    <None Include="publish\Application Files\ExcelConverter_1_0_0_1\System.Security.Cryptography.Xml.dll.deploy" />
-    <None Include="publish\ExcelConverter.application" />
     <None Include="YoY Monthly Energy Consumption %282025-08-28T13_29_13%29.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -153,8 +124,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon_excel export.ico" />
-    <Content Include="publish\publish.htm" />
-    <Content Include="publish\setup.exe" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="EPPlus">

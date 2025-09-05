@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelConverter", "ExcelConverter\ExcelConverter.csproj", "{6C675813-E106-4761-97BD-BCB53AA84C3D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "publish", "publish", "{35A17158-CB10-415F-9192-48EA05E181B6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{0F1D36DF-5895-4994-A3F0-5ABB14CE68F4}"
 	ProjectSection(SolutionItems) = preProject
-		publish\ExcelConverter.application = publish\ExcelConverter.application
-		publish\publish.htm = publish\publish.htm
-		publish\setup.exe = publish\setup.exe
+		docs\ExcelConverter.application = docs\ExcelConverter.application
+		docs\publish.htm = docs\publish.htm
+		docs\setup.exe = docs\setup.exe
 	EndProjectSection
 EndProject
 Global
