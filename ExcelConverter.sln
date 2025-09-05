@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{0F1D36DF-5
 	ProjectSection(SolutionItems) = preProject
 		docs\ExcelConverter.application = docs\ExcelConverter.application
 		docs\publish.htm = docs\publish.htm
+		docs\readme.md = docs\readme.md
+		docs\setup.exe = docs\setup.exe
 	EndProjectSection
 EndProject
 Global
