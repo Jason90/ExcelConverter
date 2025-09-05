@@ -1,0 +1,30 @@
+name: Deploy Publish to GitHub Pages
+
+# 触发条件：当main分支有推送时自动运行
+on:
+  push:
+    branches: [ "main" ]
+    # 只在/publish目录有变更时触发（可选，优化性能）
+    paths:
+      - 'publish/**'
+
+# 工作流任务
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # 使用Ubuntu系统运行
+
+    steps:
+      # 步骤1：拉取仓库代码到工作流环境
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 步骤2：部署/publish目录到GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # 部署源目录：指定仓库中的/publish目录
+          publish_dir: ./publish
+          # 部署目标分支：GitHub Pages默认使用gh-pages分支（自动创建）
+          publish_branch: gh-pages
+          # 权限配置：允许工作流推送代码到gh-pages分支
+          github_token: ${{ secrets.GITHUB_TOKEN }}
